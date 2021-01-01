@@ -6,6 +6,10 @@ app=Flask(__name__, static_url_path='')
 def index():
     return render_template('index.html')
 
+@app.route('/about')
+def about():
+    return render_template('index2.html')
+
 @app.route('/create',methods=['GET','POST'])
 def create():
     if request.method == "POST":
