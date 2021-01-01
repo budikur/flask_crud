@@ -1,0 +1,22 @@
+<html>
+<h1> Hasil Read Data</h1>
+<table>
+    <tr>
+        <td>Nama</td>
+        <td>Alamat</td>
+        <td>Program Studi</td>
+        <td>Aksi</td>
+    </tr>
+    {% for isi in hasilnya %}
+    <tr>
+        <form action="/update" method="post">
+            <td>{{ isi.1 }}<input type="hidden" name="nomor" value="{{ isi.0 }}"></td>
+            <td>{{ isi.2 }}</td>
+            <td>{{ isi.3 }}</td>
+            <td><button type="submit">EDIT</button> </td>
+        </form>
+    </tr>
+    {% endfor %}
+</table>
+<a href="/">Kembali Ke depan</a>
+</html>

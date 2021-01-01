@@ -1,0 +1,14 @@
+<html>
+<form method="post" action="/isiupdate">
+    <h2>Udate Data Latihan CRUD</h2>
+    <p>Nama</p><br>
+    <input name="nomor" type="hidden" value="{{ isiupdate.0 }}">
+    <input name="nama" value="{{ isiupdate.1 }}" ><br>
+    <p>Alamat</p><br>
+    <input name="alamat" value="{{ isiupdate.2 }}" ><br>
+    <p>Program Studi</p><br>
+    <input name="prodi" value="{{ isiupdate.3 }}" ><br>
+    <button type="submit">Update Data</button>
+</form>
+
+</html>
